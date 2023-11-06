@@ -53,7 +53,7 @@ link {
   font-weight: 400;
   border: transparent;
   margin-top: 44px;
-  transition: background 0.5s;
+  transition: background 1s;
 }
 .header__button:hover {
   background: #eb443f;
