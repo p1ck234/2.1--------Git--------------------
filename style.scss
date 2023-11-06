@@ -57,7 +57,7 @@ link {
     transition: background 0.5s;
     &:hover {
       background: #eb443f;
-      cursor: pointer;
+      cursor: url(img/cursor.svg), auto;
     }
   }
 }
@@ -73,6 +73,7 @@ link {
 .item {
   height: 300px;
   position: relative;
+
   &__text {
     position: absolute;
     top: 236px;
@@ -80,9 +81,16 @@ link {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
+    cursor: url(img/cursor.svg), auto;
     line-height: 32px;
   }
   &__image {
     border-radius: 16px;
+    transition: border-color 0.5s;
+    border: 3px solid #000915;
+    &:hover {
+      border: 3px solid #44d2ff;
+      cursor: url(img/cursor.svg), auto;
+    }
   }
 }
