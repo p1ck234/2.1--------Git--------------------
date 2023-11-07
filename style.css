@@ -36,6 +36,7 @@ link {
   font-weight: 300;
   line-height: 32px;
   margin-top: 32px;
+  margin-bottom: 44px;
 }
 .header__text-bold {
   color: #fff;
@@ -44,15 +45,15 @@ link {
   line-height: 32px;
 }
 .header__button {
-  width: 234.063px;
-  height: 48.603px;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border-radius: 30px;
   background: #9c0332;
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  border: transparent;
-  margin-top: 44px;
   transition: background 1s;
 }
 .header__button:hover {
@@ -83,7 +84,7 @@ link {
   line-height: 32px;
 }
 .item__image {
-  border-radius: 16px;
+  border-radius: 20px;
   transition: border-color 0.5s;
   border: 3px solid #000915;
 }
