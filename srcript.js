@@ -48,6 +48,7 @@ alert(age);
 
 const user = {
   name: "Daniil",
-  age: 20,
+  year: 2003,
   isAdmin: true,
+  //"city of residence": "saratov",
 };
