@@ -96,6 +96,12 @@ a {
   cursor: url(img/cursor.svg), auto;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+  }
+}
 @media (max-width: 375px) {
   .center {
     padding-left: 16px;
@@ -122,6 +128,18 @@ a {
   }
   .item__text {
     top: 206px;
+  }
+  .item__image {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .header__button {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .item__text {
+    top: 170px;
   }
   .item__image {
     width: 100%;
