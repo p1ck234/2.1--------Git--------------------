@@ -8,8 +8,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-link {
+a {
   text-decoration: none;
+  outline: none;
 }
 
 .center {
@@ -37,6 +38,7 @@ link {
   line-height: 32px;
   margin-top: 32px;
   margin-bottom: 44px;
+  max-width: 480px;
 }
 .header__text-bold {
   color: #fff;
@@ -63,15 +65,15 @@ link {
 
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 128px;
   padding-bottom: 128px;
+  gap: 32px;
   background-color: #000915;
 }
 
 .item {
-  height: 300px;
   position: relative;
 }
 .item__text {
@@ -99,6 +101,9 @@ link {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .header {
+    background-image: url(img/background-mob.jpg);
+  }
   .header__title {
     font-size: 31px;
     text-align: center;
@@ -106,5 +111,19 @@ link {
   .header__text {
     font-size: 14px;
     text-align: center;
+  }
+  .header__text-bold {
+    font-size: 14px;
+  }
+  .header__button {
+    text-align: center;
+    margin-right: 56px;
+    margin-left: 56px;
+  }
+  .item__text {
+    top: 206px;
+  }
+  .item__image {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

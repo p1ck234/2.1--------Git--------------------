@@ -4,6 +4,7 @@
     padding-right: 16px;
   }
   .header {
+    background-image: url(img/background-mob.jpg);
     &__title {
       font-size: 31px;
       text-align: center;
@@ -11,6 +12,23 @@
     &__text {
       font-size: 14px;
       text-align: center;
+      &-bold {
+        font-size: 14px;
+      }
+    }
+    &__button {
+      text-align: center;
+      margin-right: 56px;
+      margin-left: 56px;
+    }
+  }
+
+  .item {
+    &__text {
+      top: 206px;
+    }
+    &__image {
+      width: 100%;
     }
   }
 }
