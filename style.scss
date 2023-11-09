@@ -66,6 +66,7 @@ link {
 .main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 128px;
   padding-bottom: 128px;
   background-color: #000915;
@@ -94,3 +95,5 @@ link {
     }
   }
 }
+
+@import "mobile.scss";

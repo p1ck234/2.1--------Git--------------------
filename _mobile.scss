@@ -1,0 +1,16 @@
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    &__title {
+      font-size: 31px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
