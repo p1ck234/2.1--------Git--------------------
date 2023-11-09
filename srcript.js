@@ -52,3 +52,10 @@ const user = {
   isAdmin: true,
   //"city of residence": "saratov",
 };
+
+let info = prompt("Какую информацию хотите узнать о пользователе?");
+alert(user[info]);
+
+//10
+let name = prompt("Как вас зовут?");
+alert(`Привет, ${name}!`);
