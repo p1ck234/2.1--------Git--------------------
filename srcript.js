@@ -24,3 +24,30 @@ alert(
 //5
 let result = 2 ** 5;
 alert(result);
+
+//6
+let first = 9;
+let second = 2;
+alert(first % second);
+
+//7
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
+
+//8
+let age = Number(prompt("Сколько вам лет?"));
+alert(age);
+
+//9
+
+const user = {
+  name: "Daniil",
+  age: 20,
+  isAdmin: true,
+};
