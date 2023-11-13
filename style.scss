@@ -98,5 +98,40 @@ a {
   }
 }
 
+.time {
+  height: 800px;
+  background: #000915;
+  display: flex;
+  gap: 135px;
+}
+
+.left {
+  display: flex;
+  gap: 32px;
+  &__heading {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  &__button {
+    border-radius: 30px;
+    background: #9c0332;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
 @import "table.scss";
 @import "mobile.scss";
