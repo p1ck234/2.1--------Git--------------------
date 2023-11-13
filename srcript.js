@@ -1,21 +1,21 @@
 // 1
 let a = 10;
-alert(a);
+console.log(a);
 a = 20;
-alert(a);
+console.log(a);
 
 //2
 let ageIphone = 2017;
-alert(ageIphone);
+console.log(ageIphone);
 
 //3
 let nameJs = "Brendan Eich";
-alert(nameJs);
+console.log(nameJs);
 
 //4
 let b = 10;
 let c = 20;
-alert(
+console.log(
   `Сумма = ${b + c}\nРазность = ${b - c}\nПроизведение = ${b * c}\nЧастное = ${
     b - c
   }`
@@ -23,12 +23,12 @@ alert(
 
 //5
 let result = 2 ** 5;
-alert(result);
+console.log(result);
 
 //6
 let first = 9;
 let second = 2;
-alert(first % second);
+console.log(first % second);
 
 //7
 let num = 1;
@@ -38,11 +38,11 @@ num *= 7;
 num /= 3;
 num++;
 num--;
-alert(num);
+console.log(num);
 
 //8
 let age = Number(prompt("Сколько вам лет?"));
-alert(age);
+console.log(age);
 
 //9
 
@@ -54,8 +54,8 @@ const user = {
 };
 
 let info = prompt("Какую информацию хотите узнать о пользователе?");
-alert(user[info]);
+console.log(user[info]);
 
 //10
 let name = prompt("Как вас зовут?");
-alert(`Привет, ${name}!`);
+console.log(`Привет, ${name}!`);
