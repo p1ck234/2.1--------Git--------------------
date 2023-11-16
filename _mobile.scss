@@ -31,6 +31,35 @@
       width: 100%;
     }
   }
+  .time {
+    padding-top: 179px;
+  }
+  .left {
+    max-width: 375px;
+    &__heading {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
+    &__description {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      max-width: 343px;
+    }
+    &__button {
+      text-align: center;
+      margin-right: 56px;
+      margin-left: 56px;
+    }
+  }
+  .right svg {
+    width: 344px;
+    height: 236px;
+  }
 }
 @media (max-width: 320px) {
   .header__button {
@@ -45,5 +74,14 @@
       width: 100%;
     }
   }
+  .left {
+    &__button {
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+  }
+  .right svg {
+    width: 300px;
+    height: 236px;
+  }
 }
-
