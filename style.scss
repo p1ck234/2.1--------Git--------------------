@@ -98,13 +98,16 @@ a {
   }
 }
 
-.time {
+.box {
   height: 800px;
   background: #000915;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 282px;
+  &-reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .left {
@@ -122,12 +125,12 @@ a {
     font-size: 18px;
     font-weight: 300;
     line-height: 32px;
+    max-width: 584px;
   }
   &__button {
     border-radius: 30px;
     background: #9c0332;
     color: #fff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     padding-left: 74px;
