@@ -47,7 +47,7 @@ const HelloFriend = () => {
 const isNum = () => {
   let a = Number(prompt("Введите первое число"));
   let b = Number(prompt("Введите второе число"));
-  if (isNaN(a) != true && isNaN(b)!= true) {
+  if (isNaN(a) != true && isNaN(b) != true) {
     console.log(a * b);
   } else console.log("Одно или оба значения не являются числом");
 };
@@ -55,3 +55,36 @@ const isNum = () => {
 //isNum();
 
 //6
+
+const cubeization = (n = Number(prompt("Введите число"))) => {
+  let result = 0;
+  if (isNaN(n) != true) {
+    result = n * n * n;
+    console.log(`n в кубе равняется ${result}`);
+  } else console.log("Переданный параметр не является числом");
+};
+//cubeization(10);
+
+//7
+function getArea() {
+  console.log(`S = ${3.14 * this.radius ** 2}`);
+}
+function getPerimeter() {
+  console.log(`C = ${2 * 3.14 * this.radius}`);
+}
+
+const circle1 = {
+  radius: 10,
+  getArea: getArea,
+  getPerimeter: getPerimeter,
+};
+const circle2 = {
+  radius: 15,
+  getArea: getArea,
+  getPerimeter: getPerimeter,
+};
+
+circle1.getArea();
+circle1.getPerimeter();
+circle2.getArea();
+circle2.getPerimeter();
