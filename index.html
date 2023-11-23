@@ -27,11 +27,11 @@
     </header>
 
     <main class="main center">
-      <a class="item" href="#" name="game">
+      <a class="item" href="#game1">
         <span class="item__text">Игра 1</span>
         <img class="item__image" src="img/item_1.jpg" alt="item1" />
       </a>
-      <a class="item" href="#">
+      <a class="item" href="#game2">
         <p class="item__text">Игра 2</p>
         <img class="item__image" src="img/item_2.jpg" alt="item1" />
       </a>
@@ -40,14 +40,14 @@
         <img class="item__image" src="img/item_3.jpg" alt="item1" />
       </a>
     </main>
-    <section class="box center">
+    <section class="box center" id="game1">
       <article class="left">
         <h2 class="left__heading">Времена года!</h2>
         <p class="left__description">
           Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
           к какому времени года он относится
         </p>
-        <button class="left__button">Играть!</button>
+        <button class="left__button" onclick="seasons();">Играть!</button>
       </article>
       <article class="right">
         <svg
@@ -369,7 +369,7 @@
         </svg>
       </article>
     </section>
-    <section class="box box-reverse center">
+    <section class="box box-reverse center" id="game2">
       <article class="left">
         <h2 class="left__heading">Запомни слова</h2>
         <p class="left__description">
@@ -762,6 +762,6 @@
         </svg>
       </article>
     </section>
-    <script src="./hw-3.js"></script>
+    <script src="./hw-4.js"></script>
   </body>
 </html>
