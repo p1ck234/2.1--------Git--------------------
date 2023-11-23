@@ -29,7 +29,7 @@ const retSquared = (a) => {
 let result = retSquared(3);
 console.log(result);
 
-//4
+// 4
 const HelloFriend = () => {
   let age = Number(prompt("Сколько вам лет?"));
   if (age < 0) {
