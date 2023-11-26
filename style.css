@@ -192,6 +192,9 @@ a {
 .footer {
   height: 80px;
   background: #000915;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer__text {
   color: #fff;
