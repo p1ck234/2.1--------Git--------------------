@@ -110,4 +110,26 @@ function filterPositive(array) {
 filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
 
+//14
+console.log("Ex14");
+let arr14 = [];
+for (let i = 0; i < 10; i++) {
+  arr14.push(Math.floor(Math.random() * 10));
+}
+console.log(arr14);
 
+let arrResult = arr14.filter((el) => el % 2 === 0);
+console.log(arrResult);
+
+//15
+console.log("Ex15");
+let arr15 = [];
+
+for (let i = 0; i < 6; i++) {
+  arr15.push(Math.floor(Math.random() * 10));
+}
+console.log(arr15);
+
+let sumArr = arr15.reduce((total, num) => total + num);
+let average = sumArr / arr15.length;
+console.log(average);
