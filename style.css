@@ -265,6 +265,9 @@ a {
   }
   .header {
     background-image: url(img/background-mob.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .header__title {
     font-size: 31px;
@@ -279,8 +282,6 @@ a {
   }
   .header__button {
     text-align: center;
-    margin-right: 56px;
-    margin-left: 56px;
   }
   .item__text {
     top: 206px;
@@ -292,7 +293,8 @@ a {
     padding-top: 179px;
   }
   .left {
-    max-width: 375px;
+    max-width: 320px;
+    align-items: center;
   }
   .left__heading {
     color: #fff;
@@ -306,16 +308,30 @@ a {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    max-width: 343px;
+    max-width: 320px;
   }
   .left__button {
     text-align: center;
-    margin-right: 56px;
-    margin-left: 56px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
   }
   .right svg {
-    width: 344px;
+    width: 293px;
     height: 236px;
+  }
+  .riddle {
+    padding-top: 51px;
+  }
+  .riddle__title {
+    font-size: 32px;
+  }
+  .riddle__description {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 343px;
+    text-align: center;
   }
 }
 @media (max-width: 320px) {
@@ -336,5 +352,17 @@ a {
   .right svg {
     width: 300px;
     height: 236px;
+  }
+  .riddle {
+    padding-top: 51px;
+  }
+  .riddle__title {
+    font-size: 32px;
+  }
+  .riddle__description {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 343px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
