@@ -144,6 +144,60 @@ a {
   cursor: url(img/cursor.svg), auto;
 }
 
+.riddle {
+  background-image: url(img/backhground_riddle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-top: 276px;
+}
+.riddle__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.riddle__description {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+  max-width: 1200px;
+}
+.riddle__button {
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 30px;
+  background: #9c0332;
+  border-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: background 1s;
+}
+.riddle__button:hover {
+  background: #eb443f;
+  cursor: url(img/cursor.svg), auto;
+}
+
+.footer {
+  height: 80px;
+  background: #000915;
+}
+.footer__text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 412px);
