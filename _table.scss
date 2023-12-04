@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1074px) {
   .center {
     padding-left: calc(50% - 412px);
     padding-right: calc(50% - 412px);
@@ -30,8 +30,12 @@
   }
   .box {
     padding-top: 179px;
+    justify-content: center;
   }
 
+  .main {
+    justify-content: center;
+  }
   .item {
     &__image {
       max-width: 355px;
