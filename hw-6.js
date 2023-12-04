@@ -110,4 +110,39 @@ let time = new Date();
 let formattedDateTime = formatDateTime(time);
 console.log(formattedDateTime);
 
+//11
+const playRemember = () => {
+  let arr = [
+    "Яблоко",
+    "Груша",
+    "Дыня",
+    "Виноград",
+    "Персик",
+    "Апельсин",
+    "Мандарин",
+  ];
+  arr.sort(() => Math.random() - 0.5);
+  alert(arr);
 
+  let firstAnswer = prompt("Чему равнялся первый элемент массива?");
+  let secondAnswer = prompt("Чему равнялся последний элемент массива?");
+
+  let correctAnswers = 0;
+
+  arr.forEach((el) => {
+    if (
+      el.toLowerCase() === firstAnswer.toLowerCase() ||
+      el.toLowerCase() === secondAnswer.toLowerCase()
+    ) {
+      correctAnswers++;
+    }
+  });
+
+  if (correctAnswers === 2) {
+    alert("Поздравляю, вы угадали оба слова");
+  } else if (correctAnswers === 1) {
+    alert("Вы были близки к победе!");
+  } else {
+    alert("Вы ответили неверно!");
+  }
+};
