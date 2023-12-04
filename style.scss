@@ -114,6 +114,7 @@ a {
   display: flex;
   gap: 32px;
   flex-direction: column;
+  align-items: flex-start;
   max-width: 584px;
   &__heading {
     color: #fff;
@@ -146,5 +147,60 @@ a {
   }
 }
 
+.riddle {
+  background-image: url(img/backhground_riddle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-top: 276px;
+  &__title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    max-width: 1200px;
+  }
+  &__button {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 30px;
+    background: #9c0332;
+    border-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    transition: background 1s;
+    &:hover {
+      background: #eb443f;
+      cursor: url(img/cursor.svg), auto;
+    }
+  }
+}
+.footer {
+  height: 80px;
+  background: #000915;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
 @import "table.scss";
 @import "mobile.scss";

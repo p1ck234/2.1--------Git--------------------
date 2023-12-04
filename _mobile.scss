@@ -5,6 +5,9 @@
   }
   .header {
     background-image: url(img/background-mob.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__title {
       font-size: 31px;
       text-align: center;
@@ -18,8 +21,6 @@
     }
     &__button {
       text-align: center;
-      margin-right: 56px;
-      margin-left: 56px;
     }
   }
 
@@ -35,7 +36,8 @@
     padding-top: 179px;
   }
   .left {
-    max-width: 375px;
+    max-width: 320px;
+    align-items: center;
     &__heading {
       color: #fff;
       font-size: 32px;
@@ -48,17 +50,31 @@
       font-size: 14px;
       font-weight: 300;
       line-height: 22px;
-      max-width: 343px;
+      max-width: 320px;
     }
     &__button {
       text-align: center;
-      margin-right: 56px;
-      margin-left: 56px;
     }
   }
+  .right {
+    display: flex;
+    align-items: center;
+  }
   .right svg {
-    width: 344px;
+    width: 293px;
     height: 236px;
+  }
+  .riddle {
+    padding-top: 51px;
+    &__title {
+      font-size: 32px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 343px;
+      text-align: center;
+    }
   }
 }
 @media (max-width: 320px) {
@@ -83,5 +99,18 @@
   .right svg {
     width: 300px;
     height: 236px;
+  }
+
+  .riddle {
+    padding-top: 51px;
+    &__title {
+      font-size: 32px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 343px;
+      text-align: center;
+    }
   }
 }

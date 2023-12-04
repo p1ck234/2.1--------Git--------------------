@@ -31,8 +31,19 @@
   .box {
     padding-top: 179px;
   }
+
+  .item {
+    &__image {
+      max-width: 355px;
+    }
+    &__text {
+      top: 216px;
+    }
+  }
+
   .left {
     max-width: 376px;
+    align-items: center;
     &__heading {
       color: #fff;
       font-size: 32px;
@@ -56,5 +67,17 @@
   .right svg {
     width: 344px;
     height: 236px;
+  }
+  .riddle {
+    padding-top: 51px;
+    &__title {
+      font-size: 32px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 22px;
+      min-width: 343px;
+      text-align: center;
+    }
   }
 }
