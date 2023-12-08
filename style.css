@@ -202,7 +202,7 @@ a {
   font-weight: 400;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1074px) {
   .center {
     padding-left: calc(50% - 412px);
     padding-right: calc(50% - 412px);
@@ -230,6 +230,10 @@ a {
   }
   .box {
     padding-top: 179px;
+    justify-content: center;
+  }
+  .main {
+    justify-content: center;
   }
   .item__image {
     max-width: 355px;
