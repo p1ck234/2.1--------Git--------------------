@@ -6,13 +6,19 @@ console.log("#1");
 //2
 console.log("#2");
 const searchStart = (arrStr = [], search) => {
-  arrStr.forEach((word) => {
-    if (word.toLowerCase().includes(search.toLowerCase())) {
-      console.log(word);
+  for (let i = 0; i < arrStr.length; i++) {
+    if (arrStr[i].toLowerCase().startsWith(search.toLowerCase())) {
+      console.log(arrStr[i]);
     }
-  });
+  }
+  // arrStr.forEach((word) => {
+  //   if (word.toLowerCase().startsWith(search.toLowerCase())) {
+  //     console.log(word);
+  //   }
+  // });
 };
-searchStart(["Кошка", "Кит", "Комар", "Носорог"], "ко"); // ['кошка', 'комар']
+
+searchStart(["Кошка", "вилко", "Комар", "Носорог"], "ко"); // ['кошка', 'комар']
 searchStart(["яблоко", "груша", "гриб", "огурец"], "гру"); // ['груша']
 searchStart(["Дом", "Банк", "Больница", "Театр"], "Кино"); // []
 
@@ -127,22 +133,41 @@ const playRemember = () => {
   let firstAnswer = prompt("Чему равнялся первый элемент массива?");
   let secondAnswer = prompt("Чему равнялся последний элемент массива?");
 
-  let correctAnswers = 0;
+  // //let correctAnswers = 0;
 
-  arr.forEach((el) => {
-    if (
-      el.toLowerCase() === firstAnswer.toLowerCase() ||
-      el.toLowerCase() === secondAnswer.toLowerCase()
-    ) {
-      correctAnswers++;
-    }
-  });
+  // if (arr[0].toLowerCase() === firstAnswer.toLowerCase()) {
+  //   correctAnswers++;
+  // }
 
-  if (correctAnswers === 2) {
-    alert("Поздравляю, вы угадали оба слова");
-  } else if (correctAnswers === 1) {
-    alert("Вы были близки к победе!");
-  } else {
-    alert("Вы ответили неверно!");
-  }
+  // if (arr[arr.length - 1].toLowerCase() === secondAnswer.toLowerCase()) {
+  //   correctAnswers++;
+  // }
+  if (
+    arr[0].toLowerCase() === firstAnswer.toLowerCase() &&
+    arr[arr.length - 1].toLowerCase() === secondAnswer.toLowerCase()
+  ) {
+    console.log("Вы все угадали");
+  } else if (
+    arr[0].toLowerCase() === firstAnswer.toLowerCase() ||
+    arr[arr.length - 1].toLowerCase() === secondAnswer.toLowerCase()
+  ) {
+    console.log("Вы угадали 1");
+  } else console.log("Вы дебил");
+
+  // arr.forEach((el) => {
+  //   if (
+  //     el.toLowerCase() === firstAnswer.toLowerCase() ||
+  //     el.toLowerCase() === secondAnswer.toLowerCase()
+  //   ) {
+  //     correctAnswers++;
+  //   }
+  // });
+
+  // if (correctAnswers === 2) {
+  //   alert("Поздравляю, вы угадали оба слова");
+  // } else if (correctAnswers === 1) {
+  //   alert("Вы были близки к победе!");
+  // } else {
+  //   alert("Вы ответили неверно!");
+  // }
 };
