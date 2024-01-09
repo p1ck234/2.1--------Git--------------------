@@ -1,3 +1,4 @@
+// Времена года!
 const seasons = () => {
   let month = Number(prompt("Введите цифру месяца"));
   switch (month) {
@@ -26,7 +27,7 @@ const seasons = () => {
       break;
   }
 };
-
+// Запомни слова
 const playRemember = () => {
   let arr = [
     "Яблоко",
@@ -63,4 +64,44 @@ const playRemember = () => {
   ) {
     console.log("Вы угадали 1");
   } else console.log("Вы ничего не угадали");
+};
+
+const playEnigma = () => {
+  let enigmaText =
+    "Что можно увидеть с закрытыми глазами, но нельзя увидеть с открытыми?";
+  let correctAnswer = "Сон";
+  let attempts = 3;
+  let hints = 2;
+
+  alert(
+    `Давайте начнем игру! У вас есть ${attempts} попытки и ${hints} подсказки.`
+  );
+
+  while (attempts > 0) {
+    let answer = prompt(enigmaText);
+
+    if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
+      alert("Правильно! Вы угадали загадку.");
+      break;
+    } else {
+      attempts--;
+      if (attempts > 0) {
+        if (attempts === 2) {
+          hints--;
+          alert(
+            `Неправильно. У вас осталось ${attempts} попытки. Вот подсказка: это бывает ночью. У вас осталась ${hints} подсказка.`
+          );
+        } else {
+          hints--;
+          alert(
+            `Неправильно. У вас осталось ${attempts} попытки. Вот еще одна подсказка: это происходит, когда вы спите.`
+          );
+        }
+      } else {
+        alert(
+          `К сожалению, у вас закончились попытки. Правильный ответ: ${correctAnswer}`
+        );
+      }
+    }
+  }
 };
